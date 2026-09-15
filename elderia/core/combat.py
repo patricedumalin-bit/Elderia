@@ -57,15 +57,24 @@ def donner_loot(joueur, ennemi):
         objet, _ = generer_variante_bijou(objet, palier, joueur.difficulte, bonus_rarete)
     if not joueur.ajouter_objet(objet):
         return
-    raconter(f"🎁 Butin obtenu : {objet}.")
+
+    # Équipe automatiquement le butin s'il est meilleur, sinon indique qu'il rejoint l'inventaire.
+    # Plus aucun message "Butin obtenu" en double, uniquement l'état de l'objet.
     if objet in ARMES and joueur.arme_est_meilleure(objet):
-        joueur.equiper_arme(objet)
+        joueur.arme = objet
+        joueur.actualiser_mana_max()
+        raconter(f"🎁 {objet} trouvée et équipée !")
     elif objet in ARMURES and joueur.armure_est_meilleure(objet):
-        joueur.equiper_armure(objet)
+        joueur.armure = objet
+        raconter(f"🎁 {objet} trouvée et équipée !")
     elif objet in BOUCLIERS and joueur.bouclier_est_meilleure(objet):
-        joueur.equiper_bouclier(objet)
+        joueur.bouclier_equipe = objet
+        raconter(f"🎁 {objet} trouvé et équipé !")
     elif objet in BIJOUX and joueur.bijou_est_meilleur(objet):
-        joueur.equiper_bijou(objet)
+        joueur.bijou_equipe = objet
+        raconter(f"🎁 {objet} trouvé et équipé !")
+    else:
+        raconter(f"🎁 {objet} rejoint votre inventaire.")
 
 
 def attaque_compagnons(joueur, ennemi):
@@ -217,7 +226,7 @@ def attaquer_joueur(joueur, ennemi, gratuit=False, reduction_blocage=0):
             blessure_g = random.choice(blessures_possibles)
             joueur.subir_blessure_grave(blessure_g)
     else:
-        raconter(f"Vous évitez l'attaque ({attaque}) contre votre défense {defense_joueur}.")
+        raconter(f"Vous évitez l'attaque de l'ennemi.")
 
 
 def utiliser_competence(joueur, ennemi):
@@ -297,7 +306,7 @@ def lancer_combat(joueur, ennemi):
 
     initiative_joueur = lancer_de(20) + joueur.agilite_totale
     initiative_ennemi = lancer_de(20) + ennemi.get("agilite", 0)
-    raconter(f"Initiative : vous {initiative_joueur}, {nom} {initiative_ennemi}.")
+    raconter(f"Initiative : vous ({initiative_joueur}), {nom} ({initiative_ennemi}).")
     if initiative_ennemi > initiative_joueur:
         print(f"\n⚡ {nom} agit le premier !")
         attaquer_joueur(joueur, ennemi)
@@ -353,7 +362,7 @@ def lancer_combat(joueur, ennemi):
                 )
                 pv_ennemi -= degats
                 suffixe = " Coup critique !" if critique else ""
-                raconter(f"Vous touchez ({attaque}) et infligez {degats} dégâts.{suffixe}")
+                raconter(f"Vous touchez et infligez {degats} dégâts.{suffixe}")
                 effet_combat("critique" if critique else "ennemi_touche")
                 if effet_bijou == "vol_vie":
                     soin_vol = max(0, round(degats * valeur_bijou / 100))
@@ -361,7 +370,7 @@ def lancer_combat(joueur, ennemi):
                         joueur.pv = min(joueur.pv_max, joueur.pv + soin_vol)
                         raconter(f"🩸 {joueur.bijou} vous rend {soin_vol} PV.")
             else:
-                raconter(f"Votre attaque ({attaque}) ne dépasse pas la défense {defense_totale(ennemi)}.")
+                raconter(f"Votre attaque ne dépasse pas la défense de l'ennemi.")
         elif action_choisie == f"Utiliser {joueur.competence}":
             degats_competence = utiliser_competence(joueur, ennemi)
             if degats_competence > 0:
@@ -391,6 +400,13 @@ def lancer_combat(joueur, ennemi):
                 raconter(f"Vous trouvez {or_gagne} pièces d'or.")
             donner_loot(joueur, ennemi)
             joueur.ajouter_xp(ennemi["xp"])
+
+            # Repasse immédiatement l'interface graphique en mode histoire/narration dès la fin du combat,
+            # pour que les textes de butin et la suite s'affichent sur tout l'écran au lieu de rester bloqués sur les cartes de combat.
+            from elderia.core.io import _handler
+            if hasattr(_handler, "app"):
+                _handler.app.set_combat_mode(False)
+
             return True
 
         print(f"\n⚡ {nom} riposte !")

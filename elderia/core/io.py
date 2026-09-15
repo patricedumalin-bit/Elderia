@@ -137,10 +137,11 @@ class AndroidIOHandler(IOHandler):
                     content=ft.Text(
                         libelle, size=14, color=color or ("#707070" if disabled else "#f0dfb0"),
                         text_align="left",
+                        expand=True,
                     ),
-                    alignment=ft.alignment.center_left, width=330,
+                    alignment=ft.Alignment(-1, 0), padding=ft.Padding(2, 0, 2, 0),
                 ),
-                data=data, on_click=on_click, width=360, disabled=disabled,
+                data=data, on_click=on_click, expand=True, disabled=disabled,
                 style=ft.ButtonStyle(
                     bgcolor=bgcolor,
                     side=ft.BorderSide(1, "#5a4a2a" if not disabled else "#3a3a3a"),
@@ -200,8 +201,6 @@ class AndroidIOHandler(IOHandler):
             if avantage or desavantage:
                 jets.append(random.randint(1, n))
             res = max(jets) if avantage else min(jets) if desavantage else jets[0]
-        self.app.story_box.value += f"\n🎲 Dé: {res}"
-        self.app.page.update()
         return res
 
 _handler = TerminalIOHandler()

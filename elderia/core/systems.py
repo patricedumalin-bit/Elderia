@@ -199,8 +199,12 @@ def visiter_marchand(joueur, articles=None, intro=None, palier="mineur"):
                 continue
             if not joueur.ajouter_objet(nom_article):
                 continue
+            raconter(f"🛍️ Achat effectué : {nom_article}.")
             if joueur.arme_est_meilleure(nom_article):
-                joueur.equiper_arme(nom_article)
+                # On équipe l'arme en arrière-plan sans déclencher le double texte de modèles
+                joueur.arme = nom_article
+                joueur.actualiser_mana_max()
+                raconter(f"{nom_article} équipée.")
             else:
                 raconter(f"{nom_article} rejoint votre inventaire, mais votre équipement actuel reste plus efficace.")
         elif nom_article in ARMURES:
@@ -209,8 +213,10 @@ def visiter_marchand(joueur, articles=None, intro=None, palier="mineur"):
                 continue
             if not joueur.ajouter_objet(nom_article):
                 continue
+            raconter(f"🛍️ Achat effectué : {nom_article}.")
             if joueur.armure_est_meilleure(nom_article):
-                joueur.equiper_armure(nom_article)
+                joueur.armure = nom_article
+                raconter(f"{nom_article} équipée.")
             else:
                 raconter(f"{nom_article} rejoint votre inventaire, mais votre équipement actuel reste plus efficace.")
         elif nom_article in BOUCLIERS:
@@ -219,8 +225,10 @@ def visiter_marchand(joueur, articles=None, intro=None, palier="mineur"):
                 continue
             if not joueur.ajouter_objet(nom_article):
                 continue
+            raconter(f"🛍️ Achat effectué : {nom_article}.")
             if joueur.bouclier_est_meilleure(nom_article):
-                joueur.equiper_bouclier(nom_article)
+                joueur.bouclier_equipe = nom_article
+                raconter(f"{nom_article} équipé.")
             else:
                 raconter(f"{nom_article} rejoint votre inventaire, mais votre équipement actuel reste plus efficace.")
         elif nom_article in BIJOUX:
@@ -229,15 +237,19 @@ def visiter_marchand(joueur, articles=None, intro=None, palier="mineur"):
                 continue
             if not joueur.ajouter_objet(nom_article):
                 continue
+            raconter(f"🛍️ Achat effectué : {nom_article}.")
             if joueur.bijou_est_meilleur(nom_article):
-                joueur.equiper_bijou(nom_article)
+                joueur.bijou_equipe = nom_article
+                raconter(f"{nom_article} équipé.")
             else:
                 raconter(f"{nom_article} rejoint votre inventaire, mais votre bijou actuel reste plus efficace.")
         elif nom_article in COMPOSANTS_FORGE_CONNUS:
             joueur.ajouter_composant(nom_article)
+            raconter(f"🛍️ Achat effectué : {nom_article}.")
         else:
             if not joueur.ajouter_objet(nom_article):
                 continue
+            raconter(f"🛍️ Achat effectué : {nom_article}.")
 
         joueur.or_poches -= prix
         raconter(f"{nom_article} obtenu.")
