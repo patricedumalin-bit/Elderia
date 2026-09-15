@@ -1,0 +1,19 @@
+[project]
+name = "elderia"
+version = "1.0.0"
+description = "Les Chroniques d'Elderia - RPG narratif"
+requires-python = ">=3.10"
+dependencies = [
+    "flet==0.28.3",
+]
+
+[tool.flet]
+org = "com.elderia"
+product = "Les Chroniques d'Elderia"
+company = "Elderia"
+
+[tool.flet.app]
+path = "."
+
+[tool.flet.android]
+permissions = ["android.permission.INTERNET"]

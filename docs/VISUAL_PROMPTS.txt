@@ -1,0 +1,209 @@
+# ELDERIA - MASTER PROMPT LIBRARY (READY-TO-USE)
+
+## STYLE ENGINES
+* Core Style: Painterly dark heroic fantasy concept art, cinematic natural light, detailed textures and materials, grounded anatomy, strong silhouettes, atmospheric depth, readable focal point.
+* Palette: Charcoal black, cold blue, iron gray, desaturated crimson, ember orange, pale gold, controlled cyan highlights.
+* Negative Prompt: blurry, muddy silhouette, plastic skin, glossy 3d render, anime style, chibi, exaggerated muscles, deformed hands, extra fingers, duplicate character, floating objects, random letters, unreadable text, watermark, logo, border, frame, UI controls, modern objects, firearms, sci-fi machinery, steampunk, neon cyberpunk, purple gradient, oversaturated colors, blank expression, generic stock fantasy, sexualized armor, gore close-up
+
+---
+
+## 1. STYLE ANCHORS & BACKGROUNDS (Aspect Ratio 16:9)
+
+### S01 - Master Visual Key
+* Prompt: A painterly dark heroic fantasy concept art of a world after a temporal catastrophe. An exhausted young hero stands before a fractured ancient seal, overlooking ruined kingdoms under a black-blue sky. Small warm lights from distant camps, pale cyan cracks glowing in the air. Materials of iron, leather, ash, snow, and old stone. Tragic but hopeful mood, strong readable silhouette, natural volumetric light. Cinematic depth. Colors: charcoal black, cold blue, iron gray, desaturated crimson, ember orange, pale gold. No text, no logo, no watermark, no border, clean negative space at the bottom. --ar 16:9
+
+### S02 - Main Menu Background
+* Prompt: A wide cinematic view of Elderia at dusk. A ruined stone watchtower on the right, a distant village with a few glowing amber windows below, and a river reflecting cold moonlight. A broken clockwork arch looms in the far background. Large empty dark negative space left open on the left. Dark heroic fantasy painting, painterly concept art, atmospheric depth. No characters in the foreground. Colors: charcoal black, cold blue, iron gray, pale gold. No text, no UI elements, no logo. --ar 16:9
+
+### S03 - Narrative Panel Background
+* Prompt: A subtle dark fantasy texture for a background panel. Dark parchment blended with smoked iron texture, creating an almost-black charcoal surface. Faint blue temporal hairline cracks and tiny warm ash particles drifting near the edges. The center is kept completely calm, flat, and low contrast for text readability. Seamless horizontal layout, painterly texture art. No symbols, no writing, no frame. Colors: charcoal black, cold blue. --ar 16:9
+
+### S04 - Combat Arena Backdrop
+* Prompt: A ruined stone courtyard under a storm-dark sky. Broken banners fluttering, drifting ash, and glowing blue temporal fractures opening behind the enemy zone. A warm light source emanates from behind the hero's position. Broad empty center space left open for game controls. Painterly dark heroic fantasy concept art, cinematic depth, natural light. Colors: charcoal black, cold blue, iron gray, ember orange. No text, no UI elements. --ar 16:9
+
+### S05 - Act Transition Backdrop
+* Prompt: A wide composition of a colossal ancient stone road leading through five shifting fantasy landscapes blending into each other: a misty village, a royal city, a frozen mountain, a burning war plain, and a black seal resting on the horizon. Subtle visual progression from warm dawn light on one side to cold night on the other. Painterly dark heroic fantasy concept art, atmospheric depth. No characters, no text, clean bottom area. --ar 16:9
+
+---
+
+## 2. CHARACTER PORTRAITS (Aspect Ratio 4:5)
+
+### P01 - Hero Portrait Neutral
+* Prompt: A close-up character portrait of a young adult human adventurer from Elderia. Tired but intelligent eyes, weathered travel cloak over practical leather armor. A faint glowing cyan temporal mark near the collarbone. Neutral determined expression, three-quarter view. Background is dark charcoal with a thin cyan temporal fracture behind the head. Chest-up composition, painterly dark heroic fantasy concept art, natural cinematic light. Colors: charcoal black, cold blue, iron gray. No text, no modern objects. --ar 4:5
+
+### P02 - Guerrier (Warrior)
+* Prompt: A character portrait of a powerful but grounded human warrior. Wearing heavy, worn, practical iron armor, holding a longsword and a scratched wooden shield in a protective rather than brutal posture. Old facial scars, calm and wise eyes. Controlled amber rim light illuminating the silhouette against a dark charcoal background. Painterly dark heroic fantasy, detailed materials, grounded anatomy. Colors: iron gray, ember orange, desaturated crimson. No text. --ar 4:5
+
+### P03 - Rodeur (Ranger)
+* Prompt: A character portrait of a vigilant human ranger. Layered tattered forest cloak, holding an elegant elven bow, travel-worn boots. Quiet, alert expression. Cold moonlight crossing the face, casting sharp shadows. Distant pine tree silhouettes against a dark night sky in the background. Painterly dark heroic fantasy, atmospheric depth, strong silhouette. Colors: charcoal black, cold blue, iron gray. No text. --ar 4:5
+
+### P04 - Mage
+* Prompt: A character portrait of a disciplined mage holding a carved wooden rune staff. Deep blue and iron-trimmed robes, small cyan temporal sparks floating under strict control around the hand. Thoughtful, academic expression, no oversized magic. Dark library shadows in the background. Painterly dark heroic fantasy, detailed fabric, natural cinematic light. Colors: charcoal black, cold blue, pale gold. No text. --ar 4:5
+
+### P05 - Paladin
+* Prompt: A character portrait of a noble but exhausted paladin. Wearing pale steel and worn ivory armor, holding a lowered sword. Subtle gold light breaking through storm clouds in the background, illuminating the face. Compassionate but tired expression. Painterly dark heroic fantasy, detailed metallic materials, grounded anatomy. No religious symbols or logos. Colors: iron gray, pale gold, cold blue. No text. --ar 4:5
+
+### P06 - Necromancien (Necromancer)
+* Prompt: A character portrait of a restrained necromancer. Wearing dark layered robes and ash-gray gloves. Faint cold fire glowing around one hand. Introspective and human facial features rather than monstrous. Black stone masonry background. Painterly dark heroic fantasy, atmospheric depth, restrained colors. Colors: charcoal black, cold blue, iron gray. No text. --ar 4:5
+
+### P07 - Lyra
+* Prompt: A character portrait of Lyra, an elven archer and loyal companion. Silver-brown hair, practical green-gray travel cloak, holding an elven bow low. Guarded kindness in her expression, sharp eyes. Pale, filtered forest light breaking through shadows in the background. Painterly dark heroic fantasy, detailed materials, grounded anatomy. Colors: charcoal black, iron gray, pale gold. No text. --ar 4:5
+
+### P08 - Garrick
+* Prompt: A character portrait of Garrick, an older broad-shouldered blacksmith. Soot-stained hands, weathered face, wearing a heavy leather apron over worn travel armor. Warm orange forge light reflecting against a cold dark background. Expression of protective sorrow. Painterly dark heroic fantasy, strong silhouette, volumetric light. Colors: charcoal black, iron gray, ember orange. No text. --ar 4:5
+
+### P09 - Borin
+* Prompt: A character portrait of Borin, a sturdy dwarf companion. Braided beard, practical dark mail armor, a heavy iron warhammer resting on one shoulder. Skeptical but loyal eyes. Underground background illuminated by a soft, warm amber light. Painterly dark heroic fantasy, detailed metal rings, strong silhouette. Colors: charcoal black, iron gray, ember orange. No text. --ar 4:5
+
+### P10 - Mira aux Corbeaux
+* Prompt: A character portrait of Mira aux Corbeaux, a young streetwise information broker. Layered dark tattered cloth, two black corvids perched on a wooden roofline behind her. Sharp, tired smile. Illuminated by a dim market lantern light against a dark city alley background. Painterly dark heroic fantasy, atmospheric depth. Colors: charcoal black, iron gray, ember orange. No text. --ar 4:5
+
+### P11 - Elara
+* Prompt: A character portrait of Elara, a scholar rescued from a prison. Wearing a pale weathered coat, ink-stained fingers, holding old notes. Intelligent but anxious expression. Illuminated by a soft blue lamp light casting sharp shadows against a stone cell background. Painterly dark heroic fantasy, detailed paper textures. Colors: charcoal black, cold blue, iron gray. No text. --ar 4:5
+
+### P12 - Kael
+* Prompt: A character portrait of Kael, a former assassin choosing a new allegiance. Dark leather hood lowered, light practical armor, one hand resting close to but away from his blade. Conflicted and tense facial expression. Red ember rim light highlighting his silhouette against a dark background. Painterly dark heroic fantasy, strong silhouette. Colors: charcoal black, desaturated crimson, ember orange. No text. --ar 4:5
+
+### P13 - Selene
+* Prompt: A character portrait of Selene, a mysterious researcher of the Devourer of Ages. Wearing a hooded cloak, holding bronze astrolabe fragments. Calm, severe, and cold face. Dark moonlit ancient archive background with faint shadows. Painterly dark heroic fantasy, detailed bronze metal texture, cinematic light. Colors: charcoal black, cold blue, pale gold. No text. --ar 4:5
+
+### P14 - Morvayn
+* Prompt: A character portrait of Morvayn, the Porte-Cendre. Elegant, damaged dark armor, holding a cracked iron mask in one hand. Ash drifting slowly around him. Expression of ambiguous sorrow rather than pure evil. Background lit by a dual contrast of red-black firelight and pale cyan temporal light. Painterly dark heroic fantasy. Colors: charcoal black, desaturated crimson, controlled cyan. No text. --ar 4:5
+
+### P15 - Malakar
+* Prompt: A character portrait of Malakar, ancient tyrant and master of ash. A tall, weathered, imposing figure in ceremonial black iron armor and a crown-like crown of burned metal. Face partly hidden by heavy shadow, eyes reflecting a controlled crimson glow. Intimidating but distinctly human features. Dark, atmospheric background. Painterly dark heroic fantasy. Colors: charcoal black, iron gray, desaturated crimson. No text. --ar 4:5
+
+---
+
+## 3. ENEMIES AND ASSETS (Aspect Ratio 1:1 or 16:9)
+
+### E01 - Porteur de Cendres
+* Prompt: Full-body concept art of a corrupted humanoid soldier in scorched gray iron armor. Glowing ember cracks showing beneath the pale skin, holding a chipped, worn weapon in an aggressive stance. Smoke and ash swirling around the feet. Isolated on a plain near-black neutral background. Sharp readable silhouette, painterly dark heroic fantasy. Colors: charcoal black, iron gray, ember orange. No text, no UI. --ar 1:1
+
+### E02 - Garde Cendreux
+* Prompt: Full-body concept art of an elite ash guard. Imposing silhouette in heavy blackened steel armor, holding a large hooked iron shield. Red ember light glowing through a narrow visor. Standing guard at a massive dark prison gate. Painterly dark heroic fantasy, cinematic atmospheric depth. Colors: charcoal black, iron gray, desaturated crimson. No text. --ar 1:1
+
+### E03 - Spectre Enchaine
+* Prompt: Full-body concept art of a chained spectral prisoner. Translucent blue-gray ghostly body with heavy solid iron chains cutting through low mist. Sorrowful, hollow facial expression, emitting a faint cyan temporal glow. Dark cavernous background. Painterly dark heroic fantasy, ethereal volumetric light. Colors: charcoal black, cold blue, controlled cyan. No text, no graphic gore. --ar 1:1
+
+### E04 - Gardien du Cristal
+* Prompt: Full-body boss concept art of an ancient crystal guardian made of living stone, ice, and pulsing green light. Broad rocky shoulders, holding a large ceremonial stone weapon. A glowing green Life Crystal embedded deep in its chest. Isolated inside a dark ancient cavern. Painterly dark heroic fantasy, strong silhouette. Colors: charcoal black, iron gray, pale gold. No text. --ar 1:1
+
+### E05 - Chasseur du Cristal
+* Prompt: A wide cinematic composition showing two ash hunters tracking temporal energy across a treacherous, frozen mountain pass. Wearing lean, practical leather and iron armor with covered faces. One hunter holds a red signal lantern casting a warm glow on the blue-white snow. Painterly dark heroic fantasy, atmospheric depth, cinematic light. Colors: cold blue, iron gray, desaturated crimson. No text. --ar 16:9
+
+### E06 - Manifestation du Devoreur
+* Prompt: A wide cinematic scene of a vast, incomplete shadow entity emerging through a massive blue temporal fracture in the sky. Many layered hands are suggested by swirling black smoke. Ancient ruins and glowing crystals bending and warping around the fracture. Grand boss scale, painterly dark heroic fantasy, atmospheric depth. Colors: charcoal black, cold blue, controlled cyan. No text. --ar 16:9
+
+### E07 - Avatar de Malakar
+* Prompt: A wide composition of a towering avatar in black and crimson ceremonial armor, wearing a cracked metal crown and a cloak made of burning ash. Violent temporal distortion warping the space around its body. Set inside a final boss stone arena under a dark sky. Cinematic dark heroic fantasy, full body, strong silhouette. Colors: charcoal black, desaturated crimson, controlled cyan. No text. --ar 16:9
+
+### E08 - Echo du Temps
+* Prompt: Full-body concept art of a mirrored humanoid entity made of fractured clock-light. Partially transparent body with duplicated motion trails following its movement. Elegant but dangerous silhouette, standing inside a dark stone arena. Painterly dark heroic fantasy, silver and cyan palette, volumetric light. Colors: charcoal black, cold blue, controlled cyan. No text. --ar 1:1
+
+---
+
+## 4. GAME ITEMS & MEDALLIONS (Aspect Ratio 1:1)
+
+### I01 - Epée Longue (Longsword)
+* Prompt: A game item icon of a worn but noble longsword. Dark steel blade with small nicks, leather-wrapped grip reflecting a faint amber light. Centered composition on a near-black plain neutral background. Sharp readable silhouette, detailed metallic materials, painterly style. Colors: iron gray, charcoal black, pale gold. No text, no UI frames. --ar 1:1
+
+### I02 - Baton Runique (Rune Staff)
+* Prompt: A game item icon of a dark carved wooden rune staff. Topped with an iron cap encasing restrained cyan glyphs that emit a subtle blue light. Centered composition on a flat near-black neutral background. Sharp readable silhouette, painterly texture. Colors: charcoal black, cold blue, controlled cyan. No text. --ar 1:1
+
+### I03 - Dague Rouillee (Rusted Dagger)
+* Prompt: A game item icon of a short, heavily rusted iron dagger. Simple worn wooden grip, practical, humble, and heavily used. Centered composition on a near-black plain neutral background. Detailed rust textures, painterly style. Colors: charcoal black, iron gray, ember orange. No text. --ar 1:1
+
+### I04 - Armure de cuir (Leather Armor)
+* Prompt: A game item icon of practical brown-black leather armor chest piece. Repaired seams, small iron studs, showing clear signs of usage but remaining reliable. Centered on a flat near-black neutral background. Detailed leather and metal materials, painterly concept art. Colors: charcoal black, iron gray. No text. --ar 1:1
+
+### I05 - Bouclier en bois (Wooden Shield)
+* Prompt: A game item icon of a simple round wooden shield with a reinforced iron rim and old battle scratches. Warm weathered wood texture contrasting against a near-black plain background. Centered composition, sharp readable silhouette, painterly style. Colors: charcoal black, iron gray, pale gold. No text. --ar 1:1
+
+### I06 - Oeil d'Aeternis
+* Prompt: A game item icon of an ancient palm-sized temporal relic. A dark iron mechanical iris surrounding a glowing pale cyan core with small floating crystal fractures. Mysterious, non-futuristic, ancient technology. Centered on a near-black neutral background, painterly style. Colors: charcoal black, cold blue, controlled cyan. No text. --ar 1:1
+
+### I07 - Cristal de Vie (Life Crystal)
+* Prompt: A game item icon of a glowing green crystal held in a rough stone cradle. Internal organic living veins radiating a soft healing light. Dark plain background, centered composition, detailed materials, painterly dark fantasy. Colors: charcoal black, iron gray, pale gold. No text. --ar 1:1
+
+### I08 - Cristal des Ombres (Shadow Crystal)
+* Prompt: A game item icon of a deep violet-black raw crystal shard with a thin polished silver edge, containing swirling shadows within. Elegant and dangerous energy. No bright gradients. Centered composition on a near-black neutral background, painterly style. Colors: charcoal black, iron gray. No text. --ar 1:1
+
+### I09 - Fragment Temporel Majeur
+* Prompt: A game item icon of a large fractured cyan crystal shard with suspended droplets of frozen water and time around it. Cold light reflecting onto a dark stone surface. Centered composition on a near-black neutral background, detailed glass-like material, painterly style. Colors: charcoal black, cold blue, controlled cyan. No text. --ar 1:1
+
+### I10 - Sceau des Porteurs
+* Prompt: A game item icon of an ancient circular seal medallion made of black iron and pale gold inlay. Engraved with abstract circular patterns and a faint cyan crack running through the center. Centered composition on a flat near-black background, painterly style. Colors: charcoal black, pale gold, controlled cyan. No text. --ar 1:1
+
+### I11 - Medaillon des Veilleurs
+* Prompt: A game item icon of an old bronze medallion engraved with a worn guardian symbol, attached to a simple tattered leather cord. Soft, warm amber highlight illuminating the engraving. Centered composition on a near-black neutral background, detailed metal texture, painterly style. Colors: charcoal black, iron gray, pale gold. No text. --ar 1:1
+
+### I12 - Hache des Cendres
+* Prompt: A game item icon of a heavy blackened iron battle axe. Marked with glowing ember-red grooves and a chipped, battle-worn edge. Centered composition on a plain near-black background, sharp readable silhouette, painterly style. Colors: charcoal black, iron gray, ember orange. No text. --ar 1:1
+
+### I13 - Potion de soin (Healing Potion)
+* Prompt: A game item icon of a small dark glass vial filled with a thick, warm red liquid, sealed with a leather stopper. Emitting a subtle amber glow. Centered composition on a near-black plain background, detailed glass reflection, painterly style. No paper label, no text. Colors: charcoal black, desaturated crimson, ember orange. --ar 1:1
+
+### I14 - Carte ancienne d'Elderia
+* Prompt: A game item icon of a folded, heavily weathered old leather map showing coastlines and mountain marks. Held together by bronze pins and a dark leather strap. No readable text or labels. Centered composition on a near-black neutral background, detailed leather texture, painterly style. Colors: charcoal black, iron gray, pale gold. --ar 1:1
+
+### I15 - Plan des Archives Interdites
+* Prompt: A game item icon of a rolled scroll of black parchment, sealed with a thick red wax seal. Faint geometric archive diagrams visible on the edge, without any words. Centered composition on a flat near-black background, detailed parchment material, painterly style. Colors: charcoal black, desaturated crimson. No text. --ar 1:1
+
+---
+
+## 5. STORY SCENES & LOCATIONS (Aspect Ratio 16:9)
+
+### L01 - Brumebois Festival
+* Prompt: A wide cinematic illustration of a humble misty village during a harvest festival at dusk. A working blacksmith forge, a bread stall, patched linen banners, and villagers gathered under warm glowing lanterns. A peaceful scene contrasted by an ominous pale blue glow rising far beyond the roofs. Painterly dark heroic fantasy, atmospheric depth. Colors: charcoal black, cold blue, ember orange. No text. --ar 16:9
+
+### L02 - Forge de Garrick
+* Prompt: An intimate cinematic interior of an old blacksmith forge at dusk. Dying red coals in the hearth illuminate three unidentified weapons resting on a scarred wooden workbench. Garrick stands as a silhouette in the shadows. Strong contrast of warm orange forge light and cold blue creeping darkness. Painterly dark heroic fantasy, volumetric light. Colors: charcoal black, cold blue, ember orange. No text. --ar 16:9
+
+### L03 - Veillee des anciens
+* Prompt: A dark village square at night. Human elders gather around a strange, pulsing blue flame. A half-lit crowd watches anxiously, with one old cloaked figure leaving the light toward complete darkness. Blue light vividly reflected in worried facial expressions. Painterly dark heroic fantasy, dramatic cinematic light. Colors: charcoal black, cold blue, iron gray. No text. --ar 16:9
+
+### L04 - Aldorath
+* Prompt: A wide epic view of a massive white-stone capital city built beside a wide, dark river under a stormy sky. Crowded iron gates, royal tattered banners, and refugees huddled beneath thin blankets in the foreground. Three distant hills topped with grand palaces. Mood of high tension under majestic grandeur. Painterly dark heroic fantasy, atmospheric depth. Colors: iron gray, cold blue, pale gold. No text. --ar 16:9
+
+### L05 - Prison des Cendres
+* Prompt: An oppressive, colossal black stone fortress carved directly into a steep cliffside. Rows of red torches burn along the walls, with thick snow and ash drifting through the air. A small party of heroes is seen from behind, approaching a gigantic sealed iron gate. Painterly dark heroic fantasy, cinematic scale, atmospheric depth. Colors: charcoal black, iron gray, desaturated crimson. No text. --ar 16:9
+
+### L06 - Ambassade elfique
+* Prompt: A majestic living palace grown from silver vines and ancient massive trees, nestled inside a medieval human stone capital. Moonlit glowing leaves, heavily guarded elegant entrance, high political tension. Painterly dark heroic fantasy concept art, atmospheric depth, cinematic natural light. Colors: charcoal black, cold blue, pale gold. No text. --ar 16:9
+
+### L07 - Val-Therys
+* Prompt: A wide cinematic view of a sunken ancient city completely frozen between hours. A drowned stone library, broken clock towers, and faint transparent spectral silhouettes repeating their old deaths in a loop. Illuminated entirely by eerie cyan temporal light. Painterly dark heroic fantasy, ethereal atmospheric depth. Colors: charcoal black, cold blue, controlled cyan. No text. --ar 16:9
+
+### L08 - Montagnes d'Ashkar
+* Prompt: A frozen northern mountain pass under a dark sky. Deep blue-white snow drifts, jagged black rocky peaks, and a distant green crystal glow visible deep beneath thick ice. A tiny traveling party of adventurers walks along the ridge. Painterly dark heroic fantasy, extreme environmental scale. Colors: cold blue, charcoal black, pale gold. No text. --ar 16:9
+
+### L09 - Forteresse de Givre
+* Prompt: A grand interior of an ice fortress. Garrick is held captive near a massive, living green Crystal. Corrupted ash guards stand watch as a hero enters dramatically through a shattered stone gate. High emotional and physical scale. Painterly dark heroic fantasy, cinematic volumetric light. Colors: charcoal black, cold blue, iron gray. No text. --ar 16:9
+
+### L10 - Conseil d'Ashkar
+* Prompt: An underground dwarven council chamber. Dwarves gather around a massive circular stone table lit by crystal lamps. Scarred battle banners hang from the pillars. Companions and elders arguing intensely. Strong contrast of warm bronze metal highlights against cold blue cavern shadows. Painterly dark heroic fantasy, detailed materials. Colors: iron gray, cold blue, pale gold. No text. --ar 16:9
+
+### L11 - Guerre des Trois Bannieres
+* Prompt: A wide battlefield at twilight. Three allied tattered banners planted in the mud, civilians and soldiers crossing nervously between defensive lines. A distant dark army looms on the horizon beneath a massive temporal breach tearing the sky. Heroic but deeply tragic mood, painterly dark fantasy. Colors: charcoal black, desaturated crimson, cold blue. No text. --ar 16:9
+
+### L12 - Breche du Crepuscule
+* Prompt: A giant glowing fracture tearing open the sky directly above a muddy battlefield. Suspended stones and frozen rain droplets hover in mid-air. Small heroes stand on a ridge, stabilizing the rift with large crystals while massive armies wait anxiously below. Painterly dark heroic fantasy, epic cinematic light. Colors: charcoal black, cold blue, controlled cyan. No text. --ar 16:9
+
+### L13 - Camp des survivants
+* Prompt: A quiet night camp after a brutal battle. Wounded soldiers and weary refugees gather closely around small, dim campfires. The heroes share a moment of silence. Dark sky above marked by a faint, fading cyan crack. Intimate, melancholy, yet hopeful mood. Painterly dark heroic fantasy. Colors: charcoal black, cold blue, ember orange. No text. --ar 16:9
+
+### L14 - Fracture du Temps
+* Prompt: A surreal cosmic view of a black ocean of stars violently broken by a sharp, vertical cyan fracture. Shattered fragments of stone villages, fortresses, and memories float suspended inside the void. A lone hero stands on a floating rock ledge, facing it. Painterly dark heroic fantasy, atmospheric depth. Colors: charcoal black, cold blue, controlled cyan. No text. --ar 16:9
+
+### L15 - Tribunal des Cristaux
+* Prompt: A surreal circular chamber constructed entirely from floating green crystal slabs. Spectral, transparent witnesses look on from the shadows. A lone hero stands at the exact center under contrasting pale green and cold blue volumetric light. Solemn, heavy judgment mood. Painterly dark heroic fantasy. Colors: charcoal black, cold blue, pale gold. No text. --ar 16:9
+
+### L16 - Portes du Sceau
+* Prompt: Seven enormous, weathered ancient stone doors arranged in a circle around a massive black floor seal. Each door is deeply engraved with abstract, unreadable non-alphabetic symbols. The companions stand behind the hero, looking into the absolute darkness yawning beyond the final open door. Painterly dark heroic fantasy. Colors: charcoal black, iron gray, cold blue. No text. --ar 16:9
+
+### L17 - Chambre du Sceau
+* Prompt: A vast underground stone chamber. A dying Malakar rests beside a massive central floor Sceau. Large crystals orbit slowly around a pitch-black temporal core. The hero and their companions are framed in sharp silhouette in the foreground. Cinematic dark fantasy, grand scale, volumetric light. Colors: charcoal black, desaturated crimson, controlled cyan. No text. --ar 16:9
+
+### L18 - Epilogue heroique sombre
+* Prompt: A wide cinematic ending visual. The land of Elderia slowly recovering under a changing, breaking sky. Survivors and the main companions stand together in the foreground, looking toward the horizon where a fading scar in time is still visible but no longer widening. Melancholic hope, painterly dark heroic fantasy concept art. Colors: charcoal black, cold blue, pale gold, ember orange. No text. --ar 16:9
