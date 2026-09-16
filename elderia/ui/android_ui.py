@@ -88,7 +88,7 @@ class ElderiaAndroidApp:
         self.hero_portrait = ft.Image(src="", width=52, height=52, fit="cover")
         self.hero_portrait_frame = ft.Container(
             content=self.hero_portrait, width=52, height=52, border_radius=10,
-            clip_behavior="antiAlias", border=ft.Border.all(1, "#3a3a3a"),
+            clip_behavior="antiAlias", border=ft.border.all(1, "#3a3a3a"),
         )
         self.hud_name_text = ft.Text("", size=14, color="white", weight="bold")
         self.hud_class_text = ft.Text("", size=11, color="#bbbbbb")
@@ -113,7 +113,7 @@ class ElderiaAndroidApp:
                 ft.Column([ft.Text("OR", size=10, color="#bbbbbb"), self.or_text], horizontal_alignment="center", spacing=0),
             ], alignment="start", vertical_alignment="center", spacing=10),
             padding=10, bgcolor="#101010", visible=False,
-            border=ft.Border.only(bottom=ft.BorderSide(2, "#3a3a3a")),
+            border=ft.border.only(bottom=ft.border.BorderSide(2, "#3a3a3a")),
         )
 
         # Illustration de narration - plein écran en arrière-plan (derrière le texte semi-transparent)
@@ -126,7 +126,7 @@ class ElderiaAndroidApp:
         self.enemy_hp_text = ft.Text("PV: -/-", size=11, color="white")
         self.enemy_stats_text = ft.Text("", size=10, color="#ddaaaa")
         self.enemy_card = ft.Container(
-            expand=True, padding=8, bgcolor="#1a0808", border=ft.Border.all(2, "#5a1a1a"), border_radius=10,
+            expand=True, padding=8, bgcolor="#1a0808", border=ft.border.all(2, "#5a1a1a"), border_radius=10,
             content=ft.Column([
                 ft.Text("ENNEMI", size=10, color="#ff8888", weight="bold"),
                 self.enemy_name_text, self.enemy_portrait,
@@ -142,7 +142,7 @@ class ElderiaAndroidApp:
         self.combat_nrj_text = ft.Text("NRJ: -/-", size=11, color="white")
         self.hero_stats_text = ft.Text("", size=10, color="#aaccdd")
         self.hero_card = ft.Container(
-            expand=True, padding=8, bgcolor="#081420", border=ft.Border.all(2, "#1a3a5a"), border_radius=10,
+            expand=True, padding=8, bgcolor="#081420", border=ft.border.all(2, "#1a3a5a"), border_radius=10,
             content=ft.Column([
                 ft.Text("HÉROS", size=10, color="#88bbff", weight="bold"),
                 self.hero_name_text, self.hero_combat_portrait,
@@ -174,7 +174,7 @@ class ElderiaAndroidApp:
         self.story_panel = ft.Container(
             content=ft.Column([self.story_box, self.continue_indicator], scroll="auto"),
             padding=16, bgcolor=ft.Colors.with_opacity(0.55, "#141414"), expand=True, visible=False,
-            border=ft.Border.all(2, "#3a3a3a"), ink=False, width=405, # Force l'alignement sur TOUTE la largeur de l'écran du smartphone (405px)
+            border=ft.border.all(2, "#3a3a3a"), ink=False, width=405, # Force l'alignement sur TOUTE la largeur de l'écran du smartphone (405px)
         )
 
         # Choix / résultats (achat, butin, forge...) - cadre séparé sous le texte, dimensionné par
@@ -183,8 +183,8 @@ class ElderiaAndroidApp:
         self.choice_frame = ft.Container(
             content=self.choice_panel,
             padding=ft.Padding(14, 10, 14, 10), bgcolor=ft.Colors.with_opacity(0.85, "#101018"), height=150, visible=False,
-            border=ft.Border.all(2, "#3a3a3a"),
-            border_radius=ft.BorderRadius.only(top_left=18, top_right=18),
+            border=ft.border.all(2, "#3a3a3a"),
+            border_radius=ft.border_radius.only(top_left=18, top_right=18),
         )
 
         # Menu Principal
@@ -242,7 +242,7 @@ class ElderiaAndroidApp:
                 ft.TextButton("Fermer", on_click=self.hide_fiche),
             ], spacing=6, scroll="auto"),
             padding=16, bgcolor="#101010", expand=True, visible=False,
-            border=ft.Border.all(2, "#3a3a3a"),
+            border=ft.border.all(2, "#3a3a3a"),
         )
 
         # Assemblage
@@ -430,7 +430,7 @@ class ElderiaAndroidApp:
         self.enemy_name_text.value = ennemi.get("nom", "Ennemi")
         self.enemy_portrait.src = PORTRAITS_ENNEMIS.get(type_actuel, PORTRAIT_ENNEMI_DEFAUT)
         # Sans portrait dédié, une teinte de bordure propre au type aide au moins à distinguer les ennemis.
-        self.enemy_card.border = ft.Border.all(
+        self.enemy_card.border = ft.border.all(
             2, "#5a1a1a" if type_actuel in PORTRAITS_ENNEMIS else _couleur_type_ennemi(type_actuel)
         )
         self.enemy_hp_text.value = f"PV: {max(0, pv_ennemi)}/{pv_max_ennemi}"

@@ -139,7 +139,7 @@ class AndroidIOHandler(IOHandler):
                         text_align="left",
                         expand=True,
                     ),
-                    alignment=ft.Alignment(-1, 0), padding=ft.Padding(2, 0, 2, 0),
+                    alignment=ft.alignment.center_left, padding=ft.padding.only(left=2, right=2),
                 ),
                 data=data, on_click=on_click, expand=True, disabled=disabled,
                 style=ft.ButtonStyle(
